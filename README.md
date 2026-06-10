@@ -75,4 +75,4 @@ the Flask app binds to Railway's `$PORT`.
 
 ---
 
-© Christian Sebo · Manchester, NH
+© Christian Sebo · New Hampshire
