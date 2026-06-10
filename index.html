@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Christian Sebo — IBM-Certified AI Engineer building practical, reliable generative AI systems with Python, LangChain, LangGraph, and the Anthropic Claude API." />
+  <meta name="author" content="Christian Sebo" />
+  <meta property="og:title" content="Christian Sebo — AI Engineer" />
+  <meta property="og:description" content="IBM-Certified Generative AI Engineer building LangGraph agents and AI-powered applications." />
+  <meta property="og:type" content="website" />
+  <title>Christian Sebo — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand">
+      <span class="nav__brand-mark">CS</span>
+      <span class="nav__brand-text">Christian Sebo</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">
+          <span class="status-dot"></span>
+          IBM-Certified AI Engineer · Open to opportunities
+        </p>
+        <h1 class="hero__title">
+          I build <span class="grad">practical, reliable</span><br />
+          AI systems that solve<br />
+          real-world problems.
+        </h1>
+        <p class="hero__lede">
+          Generative AI engineer specializing in <strong>LangGraph ReAct agents</strong>,
+          multi-tool architectures, and end-to-end AI applications built with Python,
+          LangChain, and the Anthropic Claude API.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+        <ul class="hero__meta">
+          <li><span>📍</span> Manchester, NH · Open to relocation</li>
+          <li><span>🎓</span> IBM AI Developer &amp; Generative AI Engineering</li>
+        </ul>
+      </div>
+
+      <div class="hero__terminal" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--amber"></span>
+            <span class="dot dot--green"></span>
+            <span class="terminal__title">agent.py</span>
+          </div>
+          <pre class="terminal__body"><code><span class="c-key">from</span> langgraph.prebuilt <span class="c-key">import</span> create_react_agent
+<span class="c-key">from</span> langchain_anthropic <span class="c-key">import</span> ChatAnthropic
+
+llm = ChatAnthropic(model=<span class="c-str">"claude-sonnet"</span>)
+
+agent = create_react_agent(
+    llm,
+    tools=[search, read_email, summarize],
+)
+
+<span class="c-cmt"># reliable AI, shipped end-to-end</span>
+result = agent.invoke(<span class="c-str">"Solve it."</span>)</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm an <strong>IBM-certified Generative AI Engineer</strong> with hands-on
+            experience designing and building AI-powered applications and LangGraph
+            ReAct agents. I work across the full stack — from prompt engineering and
+            agent orchestration to REST APIs and React frontends.
+          </p>
+          <p>
+            My focus is on <strong>multi-tool agent architectures</strong>, integrating
+            external APIs, and implementing secure OAuth 2.0 workflows. I care about
+            building systems that are practical and reliable, not just demos.
+          </p>
+          <p>
+            I hold dual IBM Professional Certificates in AI Development and Generative
+            AI Engineering, with computer science coursework at Southern New Hampshire
+            University.
+          </p>
+        </div>
+        <aside class="about__card">
+          <h3>At a glance</h3>
+          <ul>
+            <li><span>Focus</span> Agentic AI &amp; RAG</li>
+            <li><span>Core stack</span> Python · LangChain · LangGraph</li>
+            <li><span>LLMs</span> Anthropic Claude · OpenAI</li>
+            <li><span>Backend</span> Flask · REST · SQLite</li>
+            <li><span>Frontend</span> React · TypeScript</li>
+            <li><span>Auth</span> OAuth 2.0</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Skills</h2>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>AI &amp; Agents</h3>
+          <ul class="tags">
+            <li>Generative AI</li>
+            <li>LangGraph</li>
+            <li>LangChain</li>
+            <li>AI Agents (ReAct)</li>
+            <li>Prompt Engineering</li>
+            <li>RAG</li>
+            <li>NLP</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Languages &amp; Libraries</h3>
+          <ul class="tags">
+            <li>Python</li>
+            <li>scikit-learn</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>APIs &amp; Models</h3>
+          <ul class="tags">
+            <li>Anthropic Claude API</li>
+            <li>OpenAI API</li>
+            <li>Gmail API</li>
+            <li>Tavily Search API</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Platform &amp; Security</h3>
+          <ul class="tags">
+            <li>Flask</li>
+            <li>React</li>
+            <li>SQLite</li>
+            <li>OAuth 2.0</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+      <div class="projects">
+        <article class="project">
+          <div class="project__top">
+            <h3 class="project__name">AI Research Assistant</h3>
+            <a class="project__link" href="https://github.com/christiansebo/research-assistant" target="_blank" rel="noopener" aria-label="View AI Research Assistant on GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            </a>
+          </div>
+          <p class="project__desc">
+            A 4-module LangChain agent powered by Claude Sonnet and the Tavily Search
+            API. Retrieves sourced URLs per query, maintains full multi-turn
+            conversational memory, and auto-saves every result to timestamped files.
+          </p>
+          <ul class="project__highlights">
+            <li>Returns 3 sourced URLs per query with persistent memory</li>
+            <li>Handles 4 distinct error types (API failures, missing keys, empty &amp; malformed input)</li>
+            <li><code>--topic</code> CLI flag for immediate query execution</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>Python</li><li>LangChain</li><li>Anthropic API</li><li>Tavily</li>
+          </ul>
+        </article>
+
+        <article class="project project--featured">
+          <span class="project__badge">Full-stack</span>
+          <div class="project__top">
+            <h3 class="project__name">AI Email Assistant — "Jean"</h3>
+            <a class="project__link" href="https://github.com/christiansebo/email-responder" target="_blank" rel="noopener" aria-label="View AI Email Assistant on GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            </a>
+          </div>
+          <p class="project__desc">
+            A full-stack LangGraph ReAct agent with 6 custom Gmail tools — read, send,
+            sort by urgency, open, summarize, and unsubscribe — backed by Google OAuth
+            2.0 and parallel, thread-safe email fetching.
+          </p>
+          <ul class="project__highlights">
+            <li>Flask REST API backend with SQLite chat persistence</li>
+            <li>Confirmation flow for sensitive actions (send, unsubscribe)</li>
+            <li>React / TypeScript frontend</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>Python</li><li>LangGraph</li><li>LangChain</li><li>Anthropic API</li><li>Gmail API</li><li>Flask</li><li>React</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Experience &amp; Education</h2>
+      </div>
+
+      <div class="timeline-grid">
+        <div class="timeline">
+          <h3 class="timeline__heading">Work</h3>
+          <div class="t-item">
+            <div class="t-item__head">
+              <h4>Sales Associate / Key Holder</h4>
+              <span class="t-item__org">Sunglass Hut — EssilorLuxottica</span>
+            </div>
+            <ul>
+              <li>Top performer in upsell conversion by analyzing customer needs and tailoring recommendations.</li>
+              <li>Trained and onboarded 4+ new associates with clear, repeatable processes.</li>
+              <li>Managed cash handling with zero discrepancies over 12+ months.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <h3 class="timeline__heading">Certifications &amp; Education</h3>
+          <div class="t-item">
+            <div class="t-item__head">
+              <h4>IBM AI Developer Professional Certificate</h4>
+              <span class="t-item__org">IBM + Coursera · 2026</span>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-item__head">
+              <h4>IBM Generative AI Engineering Professional Certificate</h4>
+              <span class="t-item__org">IBM + Coursera · 2026</span>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-item__head">
+              <h4>Computer Science — Coursework</h4>
+              <span class="t-item__org">Southern New Hampshire University · 2023–2025</span>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-item__head">
+              <h4>Business Administration</h4>
+              <span class="t-item__org">Suffolk University, MA · 2021–2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="section__head">
+        <span class="section__index">05</span>
+        <h2 class="section__title">Contact</h2>
+      </div>
+      <div class="contact">
+        <h3 class="contact__title">Let's build something reliable.</h3>
+        <p class="contact__lede">
+          Open to AI engineering roles and collaborations. The fastest way to reach me:
+        </p>
+        <div class="contact__links">
+          <a class="contact__btn" href="mailto:sebo.prof@gmail.com">
+            <span>✉️</span> sebo.prof@gmail.com
+          </a>
+          <a class="contact__btn" href="https://github.com/christiansebo" target="_blank" rel="noopener">
+            <span>💻</span> github.com/christiansebo
+          </a>
+          <a class="contact__btn" href="tel:+16038583839">
+            <span>📞</span> (603) 858-3839
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Christian Sebo · Built with care in Manchester, NH</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
