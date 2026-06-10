@@ -383,8 +383,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px)
 .project:hover::before { opacity: 1; }
 .project--featured { border-color: rgba(124, 123, 255, 0.4); }
 .project__badge {
-  position: absolute;
-  top: 22px; right: 22px;
+  align-self: flex-start;
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
