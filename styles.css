@@ -361,8 +361,28 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px)
 }
 .project__top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .project__name { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
+.project__links { display: inline-flex; gap: 12px; align-items: center; }
 .project__link { color: var(--faint); transition: color 0.2s, transform 0.2s; display: inline-flex; }
 .project__link:hover { color: var(--text); transform: translateY(-2px); }
+.project__cta {
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.project__cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-2);
+  transition: color 0.2s, gap 0.2s var(--ease);
+}
+.project__cta a span { transition: transform 0.2s var(--ease); }
+.project__cta a:hover { color: var(--text); }
+.project__cta a:hover span { transform: translate(2px, -2px); }
+.project__cta-primary { color: var(--accent) !important; }
 .project__desc { color: var(--muted); font-size: 0.94rem; }
 .project__highlights { list-style: none; display: flex; flex-direction: column; gap: 9px; }
 .project__highlights li {
