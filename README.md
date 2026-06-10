@@ -36,6 +36,25 @@ Or simply open `index.html` in a browser.
 └── README.md
 ```
 
+## Deploy with Railway
+
+This repo is Railway-ready. It ships a `package.json` (serves the static site via
+[`serve`](https://www.npmjs.com/package/serve) on Railway's `$PORT`) and a
+`railway.json` that pins the build/start config.
+
+1. Go to [railway.app](https://railway.app) → **New Project** → **Deploy from GitHub repo**.
+2. Select this repository and authorize Railway if prompted.
+3. Railway auto-detects Node (Nixpacks), runs `npm install`, then `serve -s . -l $PORT`.
+4. Open the service → **Settings → Networking → Generate Domain** (or attach a
+   custom one). Your site is served at e.g. `https://christiansebo.up.railway.app`.
+
+Local production check:
+
+```bash
+npm install
+PORT=4173 npm start   # → http://localhost:4173
+```
+
 ## Deploy with GitHub Pages
 
 1. Push this repository to GitHub.
