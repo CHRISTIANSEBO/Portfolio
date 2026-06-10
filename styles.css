@@ -78,25 +78,13 @@ code, pre, .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
   padding: 18px clamp(20px, 5vw, 48px);
   background: rgba(10, 11, 16, 0.6);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s, background 0.3s;
+  transition: background 0.3s;
 }
 .nav.scrolled {
-  border-bottom-color: var(--border);
   background: rgba(10, 11, 16, 0.85);
 }
-.nav__brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
-.nav__brand-mark {
-  display: grid;
-  place-items: center;
-  width: 34px; height: 34px;
-  border-radius: 9px;
-  background: var(--grad);
-  color: #06070b;
-  font-weight: 800;
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;
-}
+.nav__brand { display: flex; align-items: center; font-weight: 700; }
+.nav__brand-text { font-size: clamp(1.4rem, 1.1rem + 1vw, 1.9rem); letter-spacing: -0.01em; }
 .nav__links { display: flex; gap: 28px; }
 .nav__links a {
   color: var(--muted);
