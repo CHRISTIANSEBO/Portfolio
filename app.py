@@ -18,7 +18,13 @@ from flask import Flask, send_from_directory
 app = Flask(__name__, static_folder=None)
 
 # Only these files are exposed; everything else returns 404.
-PUBLIC_FILES = {"index.html", "styles.css", "script.js", "README.md"}
+PUBLIC_FILES = {
+    "index.html",
+    "styles.css",
+    "script.js",
+    "README.md",
+    "Christian-Sebo-Resume.pdf",
+}
 
 
 @app.route("/")
