@@ -35,13 +35,16 @@ Flask server is what runs in production.
 
 ```
 .
-├── app.py             # Flask server (serves the site + /health)
+├── app.py             # Flask server (serves the site, /health, styled 404, /assets)
 ├── requirements.txt   # Flask, gunicorn
 ├── Procfile           # web: gunicorn app:app --bind 0.0.0.0:$PORT
 ├── railway.json       # Railway build/deploy config
 ├── index.html         # markup & content
 ├── styles.css         # all styling + responsive rules
 ├── script.js          # interactions
+├── favicon.svg        # gradient AI mark
+├── og-image.png       # social share preview (1200×630)
+├── assets/            # project screenshots / demo GIFs (drop files here)
 ├── Christian-Sebo-Resume.pdf   # downloadable résumé (served via allowlist)
 └── README.md
 ```
