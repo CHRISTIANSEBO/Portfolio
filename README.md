@@ -42,6 +42,7 @@ Flask server is what runs in production.
 ├── index.html         # markup & content
 ├── styles.css         # all styling + responsive rules
 ├── script.js          # interactions
+├── Christian-Sebo-Resume.pdf   # downloadable résumé (served via allowlist)
 └── README.md
 ```
 
