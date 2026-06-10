@@ -446,7 +446,14 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px)
   gap: 16px;
   margin-bottom: 26px;
 }
-.cert-badges > div { min-height: 270px; }
+.cert-badges > div {
+  min-height: 270px;
+  background: #f4f5f9;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 8px;
+  box-shadow: var(--shadow);
+}
 .timeline__note a { color: var(--accent-2); border-bottom: 1px solid transparent; transition: border-color 0.2s; }
 .timeline__note a:hover { border-color: var(--accent-2); }
 .t-item {
