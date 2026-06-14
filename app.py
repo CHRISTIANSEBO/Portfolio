@@ -25,6 +25,7 @@ PUBLIC_FILES = {
     "README.md",
     "favicon.svg",
     "og-image.png",
+    "jean-demo.html",
     "Christian-Sebo-Resume.pdf",
 }
 
