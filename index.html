@@ -121,7 +121,7 @@
         </ul>
         <ul class="hero__stats">
           <li><strong>2×</strong><span>IBM AI Professional Certificates</span></li>
-          <li><strong>3</strong><span>End-to-end AI apps shipped (all live)</span></li>
+          <li><strong>4</strong><span>End-to-end AI apps shipped (all live)</span></li>
           <li><strong>6</strong><span>Custom tools in the "Jean" agent</span></li>
         </ul>
       </div>
@@ -352,6 +352,41 @@ result = agent.invoke(<span class="c-str">"Solve it."</span>)</code></pre>
           <div class="project__cta">
             <a class="project__cta-primary" href="https://airgead-banking.up.railway.app/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/christiansebo/AirGead-Banking" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="project__media">
+            <img alt="LLMQA evaluation dashboard preview" loading="lazy" src="assets/llmqa.png">
+          </figure>
+          <div class="project__top">
+            <h3 class="project__name">LLMQA — LLM Quality Assurance</h3>
+            <div class="project__links">
+              <a class="project__link" href="https://llmqa-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Open the live LLMQA dashboard" title="Live demo">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a class="project__link" href="https://github.com/christiansebo/LLMQA" target="_blank" rel="noopener" aria-label="View LLMQA on GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="project__desc">
+            An evaluation harness that treats LLM outputs like software you can
+            test — a golden dataset, pluggable metrics, and CI quality gates that
+            fail a build when a model or prompt change degrades quality. Automates
+            the LLM-evaluation work I did professionally.
+          </p>
+          <ul class="project__highlights">
+            <li>Metrics: exact match, similarity, LLM-as-judge, hallucination/grounding</li>
+            <li>Per-case metric gating + regression detection across runs</li>
+            <li>Dashboard runs live Claude evals; free deterministic mock for CI</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>Python</li><li>FastAPI</li><li>Claude</li><li>CI</li>
+          </ul>
+          <div class="project__cta">
+            <a class="project__cta-primary" href="https://llmqa-production.up.railway.app/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/christiansebo/LLMQA" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
