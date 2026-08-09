@@ -4,7 +4,7 @@ Personal portfolio site for **Christian Sebo**, an IBM-Certified AI Engineer
 building practical, reliable generative AI systems with Python, LangChain,
 LangGraph, and the Anthropic Claude API.
 
-🔗 **Live:** _enable GitHub Pages to publish (see below)_
+🔗 **Live:** [christiansebo.up.railway.app](https://christiansebo.up.railway.app)
 
 ## Stack
 
